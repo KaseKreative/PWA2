@@ -1,0 +1,52 @@
+
+body {
+    background: radial-gradient(ellipse at center, rgba(84,57,48,1) 5%,rgba(86,40,24,1) 100%) no-repeat center;
+    background-size: cover;
+    height: 670px;
+}
+
+#imgDiv {
+    /*text-indent: -9999px;*/
+    background: url("../img/CrazyApeHead.png") no-repeat center;
+    background-size: cover;
+    position: absolute;
+    left: 525px;
+    top: 30px;
+    width: 400px;
+    height: 400px;
+    cursor: pointer;
+}
+
+#imgDiv a {
+    /*background: purple;*/
+    opacity: 0;
+    display: inline-block;
+    height:400px;
+    width: 100%;
+}
+
+#title {
+    /*background: red;*/
+    position: relative;
+    top: 425px;
+    padding: 10px;
+}
+
+#title h1 {
+    /*background: blue;*/
+    margin: 0 auto;
+    font-size: 250%;
+    text-align: center;
+    width: 35%;
+    font-family:'Comfortaa', cursive;
+    color: #B58F2E;
+}
+
+#title h1 a {
+    text-decoration: none;
+    color: inherit;
+}
+
+#title h1 a:hover {
+    color:#e2c16c;
+}
