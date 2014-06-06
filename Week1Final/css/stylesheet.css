@@ -1,0 +1,305 @@
+
+/*
+Fonts:
+Nav: font-family: 'Comfortaa', cursive;
+
+Colors:
+
+*/
+
+
+
+body {
+    margin:0;
+    padding-top:150px;
+    background:linear-gradient(to right, #562818 0%,#684324 51%,#51382b 100%);
+}
+
+.indent {
+    text-indent: -9999px;
+}
+
+.clear {
+    clear: both;
+    background: blue;
+}
+
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^Header~~~*/
+
+header {
+    position: fixed;
+    top: 0;
+    margin:0;
+    width: 100%;
+    background: linear-gradient(#373839, #262727 97%, #2B2D2D);
+    height: 145px;
+    padding:10px 0 0;
+    z-index: 97;
+}
+
+header p[class="indent"] {
+
+    margin: 0;
+    background:url('../img/CrazyApe.png') no-repeat ;
+    background-size: cover;
+    width: 300px;
+    height: 100px;
+}
+
+header .searchdiv {
+    /*background: blue;*/
+    float: right;
+    position: relative;
+    right: 75px;
+    bottom: 60px;
+    width: 500px;
+    border-radius: 20px;
+}
+
+header .searchdiv input[type="search"]{
+    background: white url('../img/Sprites/spyglass.png') no-repeat right;
+    border-right: 10px solid transparent;
+    width:100%;
+    padding: 5px;
+    height: 100%;
+    border-radius:20px;
+}
+
+#login {
+    /*background: purple;*/
+    position: absolute;
+    right: 50px;
+    display: inline-block;
+}
+
+#login p {
+    /*background: red;*/
+    margin:0;
+}
+
+#login a {
+    text-decoration: none;
+    font-size: 75%;
+    /*background:url("../img/Sprites/NavArrow.png") no-repeat right;*/
+    color: #B58F2E;
+    font-family:'Comfortaa', cursive;
+}
+
+#login a:hover {
+    color: #915D8F;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^HeaderNav~~~*/
+
+nav {
+    /*background: purple;*/
+}
+
+.nav {
+    /*background: red;*/
+    position: relative;
+    left: 100px;
+    padding: 10px 30px;
+    margin-left: 30px;
+    display: inline-block;
+}
+
+.nav a {
+    text-align: right;
+    padding-right: 30px;
+    display: inline-block;
+    background:url("../img/Sprites/NavArrow.png") no-repeat right;
+    text-decoration: none;
+    color: #B58F2E;
+    font-family:'Comfortaa', cursive;
+}
+
+.nav a:hover {
+    color: #915D8F;
+    background: url("../img/Sprites/NavArrowHover.png") no-repeat right;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^Megatron~~~*/
+
+#megatron {
+    clear: both;
+    background: url("../img/Megatron.jpg") center no-repeat;
+    background-size: cover;
+    height: 600px;
+    border-bottom: 3px solid black;
+}
+#InfoBox {
+    background: radial-gradient(ellipse at center, rgba(84,57,48,1) 5%,rgba(86,40,24,1) 100%);
+    border-radius: 5px;
+    position: relative;
+    left: 125px;
+    top: 200px;
+    display: inline-block;
+    padding: 50px 10px 20px;
+    box-shadow: 0 2px 2px 2px hsla(15, 46%, 13%, 0.74);
+}
+
+#InfoBox p span {
+    text-decoration:underline;
+}
+
+#megatron p {
+    /*background: red;*/
+    text-align: center;
+    font-size: 22px;
+    font-family:'Comfortaa', cursive;
+    margin: 0;
+    padding: 10px;
+    display:block;
+    color:#B58F2E;
+}
+
+ #MegatronCTA p {
+     /*background: red;*/
+     font-size: 85%;
+    margin:0;
+    position: relative;
+    top:20px;
+    width: 180px;
+    margin-left: 15px;
+    text-align:left;
+
+
+}
+
+#MegatronCTA p a {
+    /*background: purple;*/
+    width: 100%;
+    text-decoration: none;
+    color:#B58F2E;
+    font-family:'Comfortaa', cursive;
+}
+
+#MegatronCTA p a:hover {
+    color: #915D8F;
+}
+
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^Container~~~*/
+
+#container {
+    position: relative;
+    top:-50px;
+    border-radius: 5px;
+    margin: 0 auto;
+    background: #915d8f;
+    width: 960px;
+    height: 1000px;
+    box-shadow: 0px 2px 2px 2px hsla(15, 46%, 13%, 0.74);
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^ContainerThrees~~~*/
+
+#Threes {
+     position: relative;
+    top: 20px;
+    text-align: center;
+    margin: 0 auto;
+
+}
+
+.threes {
+    text-indent: -9999px;
+    height: 200px;
+    background: purple;
+    width: 30%;
+    display: inline-block;
+    border-radius: 5px;
+    box-shadow: 0 2px 2px 2px hsla(15, 46%, 13%, 0.74);
+}
+
+#xbox {
+    background: url("../img/Xbox.jpg") no-repeat center;
+    background-size: cover;
+}
+
+#playstation{
+    background: url("../img/Playstation.jpg") no-repeat center;
+    background-size: cover;
+    margin: 0 10px;
+}
+
+#wii {
+    background: url("../img/Wii.jpg") no-repeat center;
+    background-size: cover;
+}
+
+.threes:hover {
+    -webkit-transition: opacity .5s ease-in-out;-moz-transition: opacity .5s ease-in-out;-ms-transition: opacity .5s ease-in-out;-o-transition: opacity .5s ease-in-out;transition: opacity .5s ease-in-out;
+    opacity: .5;
+}
+
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^LoginModal~~~*/
+
+
+
+#loginModal {
+    opacity: 0;
+    position: fixed;
+    top:200px;
+    left:610px;
+    z-index: 99;
+    display:none;
+    border-radius: 5px;
+    box-shadow: 0px 2px 2px 2px hsla(15, 46%, 13%, 0.74);
+    padding: 20px;
+    text-align: left;
+    width: 200px;
+    background: #562818;
+    color: #B58F2E;
+    font-family:'Comfortaa', cursive;
+}
+
+#LoginX {
+
+}
+
+#LoginX a {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    text-decoration: none;
+    color: #B58F2E;
+    font-family:'Comfortaa', cursive;
+}
+
+#loginModal form label[for="password"] {
+    margin-top: 5px;
+}
+
+#loginModal input {
+    margin: 5px;
+    border-radius: 5px;
+}
+
+#loginModal input[type="button"] {
+    margin-left: 8px;
+    width: 155px;
+    background: #562818;
+    color: #B58F2E;
+    font-family:'Comfortaa', cursive;
+}
+
+#loginModal form {
+    margin: 10px 13px;
+    padding: 5px;
+    /*background: purple;*/
+}
+
+#ModalBackground {
+    position: absolute;
+    top: 0;
+    display: none;
+    opacity: 0;
+    background: hsla(15, 56%, 22%, 0.65);
+    width: 100%;
+    height: 2000px;
+    z-index: 98;
+}

@@ -10,9 +10,31 @@ $(document).ready(function(){
 });
 
 $(document).ready(function(){
-    alert("Document Is Ready");
+//    alert("Document Is Ready");
 });
 
 $(window).load(function(){
-    alert("Loaded");
+//    alert("Loaded");
+});
+
+$("input[type='button']").click(function(){
+    $("input[id='clickme']")
+        .css("background", "purple")
+        .css("border-radius", "20px")
+        .css("border", "4px solid black")
+        .css("color", "white")
+//        .fadeOut(5000)
+        .val("Loser!");
+//        .fadeIn(6000);
+});
+
+$(document).ready(function(){
+    $("form")
+        .append('<label for="blah">Username: </label>')
+        .append('<input type="text" id="blah">');
+});
+
+$("td").mouseover(function(){
+
+   $("td").css("background", "blue");
 });

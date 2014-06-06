@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <link rel="stylesheet" href="css/stylesheet.css" type="text/css"/>
+    <link rel="stylesheet" href="css/dashboard.css" type="text/css"/>
+    <link href='http://fonts.googleapis.com/css?family=Comfortaa' rel='stylesheet' type='text/css'>
+</head>
+<body>
+<div id="ModalBackground"></div>
+<header>
+    <div id="Logo"><p class="indent">Crazy Ape</p></div>
+    <div class="searchdiv"><input id="search" type="search" placeholder="Search.."></div>
+    <div id="login"><p><a href="#loginModal">Login</a></p></div>
+    <nav>
+        <div class="nav"><a href="Index.html">Home</a></div>
+        <div class="nav"><a href="Dashboard.html">Dashboard</a></div>
+        <div class="nav"><a href="Register.html">Register</a></div>
+    </nav>
+</header>
+<div id="container">
+    <div id="UserImg"><img src="img/Kase2.jpg" alt="User Image"/></div>
+    <div id="GeneralInfo">
+        <div>
+            <h2>General Information</h2>
+        </div>
+        <div id="GeneralForm">
+            <form>
+                <div>
+                    <div class="GeneralLabel">
+                        <label for="name">Full Name:</label>
+                    </div>
+                    <div class="GeneralInput">
+                        <input id="name" type="text">
+                    </div>
+                    <div class="GeneralLabel">
+                        <label for="age">Age:</label>
+                    </div>
+                    <div class="GeneralInput">
+                        <input id="age" type="number" min="0" max="100">
+                    </div>
+                    <div class="GeneralLabel">
+                        <label for="address">Address:</label>
+                    </div>
+                    <div class="GeneralInput">
+                        <input id="address" type="text">
+                    </div>
+                    <div class="GeneralLabel">
+                        <label for="console">Console:</label>
+                    </div>
+                    <div id="consoleDiv" class="GeneralInput">
+                        <select id="console">
+                        <option>Xbox</option>
+                        <option>Playstation</option>
+                        <option>Wii</option>
+                     </select>
+                        <a id="+" href="#">+</a>
+                    </div>
+                    <input id="Save" type="button" value="Save">
+                  </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="clear"></div>
+
+    <div id="TopGames">
+        <div>
+            <h3>Top Games</h3>
+        </div>
+        <div>
+            <div class="TopGame">Game 1</div>
+            <div class="TopGame">Game 2</div>
+            <div class="TopGame">Game 3</div>
+        </div>
+    </div>
+</div>
+
+    <div id="loginModal">
+        <div>
+            <div>
+                <form>
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" placeholder="Username" required />
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" placeholder="Password" required />
+                    <input type="button" id="loginModalButton" value="Login" />
+                </form>
+                <div id="LoginX"><a href="Dashboard.html">x</a></div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="js/jquery-1.11.1.js"></script>
+    <script type="text/javascript" src="js/Main.js"></script>
+
+</body>
+</html>

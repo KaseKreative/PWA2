@@ -1,0 +1,130 @@
+
+#container{
+    position: relative;
+    top: 0;
+    height: 1000px;
+}
+
+#UserImg {
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    /*background: red;*/
+    width: 300px;
+    height: 300px;
+    box-shadow: 0 2px 2px 2px hsla(15, 46%, 13%, 0.74);
+}
+
+#UserImg img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^General Information~~~*/
+
+#GeneralInfo {
+    /*background: red;*/
+    float: right;
+    margin: 15px 15px 0 0;
+    width: 575px;
+    height: 300px;
+    border-left: 2px solid #562818;
+}
+
+#GeneralInfo h2 {
+    text-align: center;
+    color: #B58F2E;
+    font-family:'Comfortaa', cursive;
+}
+
+#GeneralForm label {
+    text-align: right;
+    color: #B58F2E;
+    font-family:'Comfortaa', cursive;
+    margin-left: 20px;
+}
+
+
+.GeneralLabel {
+    /*background: red;*/
+    clear: left;
+    float: left;
+    width: 100px;
+    text-align: right;
+    margin-right: 5px;
+}
+
+.GeneralInput input {
+    /*background: blue;*/
+    border: 2px solid #562818;
+    width: 175px;
+    border-radius: 5px;
+}
+
+.GeneralInput input[id="age"]{
+    width: 60px;
+}
+
+.GeneralLabel, .GeneralInput input, .GeneralInput select {
+    margin-top: 10px;
+}
+
+option {
+    color: #B58F2E;
+    font-family:'Comfortaa', cursive;
+}
+
+#consoleDiv a {
+    padding: 2px 5px 1px;
+    border-radius: 50px;
+    text-decoration: none;
+    color: #B58F2E;
+    font-family:'Comfortaa', cursive;
+    background: #562818;
+}
+
+#consoleDiv a:hover {
+    color: #e2c16c;
+    background: #73402f;
+}
+
+#GeneralForm input[type="button"] {
+    width: 60px;
+    margin-top: 5px;
+    border:none;
+    border-radius: 5px;
+    color: #B58F2E;
+    background: #562818;
+}
+
+#GeneralForm input[type="button"]:hover {
+    color: #e2c16c;
+    background: #73402f;
+}
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^Secondary Information~~~*/
+
+#TopGames{
+    /*background: blue;*/
+    border-top: 2px solid #562818;
+    margin-top: 40px;
+    margin-left: 10px;
+    width: 940px;
+    height: 200px;
+}
+
+#TopGames h3 {
+    text-align: center;
+    color: #B58F2E;
+    font-family:'Comfortaa', cursive;
+}
+
+.TopGame {
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    background: radial-gradient(ellipse at center, rgba(84,57,48,1) 5%,rgba(86,40,24,1) 100%);
+    color: #B58F2E;
+    font-family:'Comfortaa', cursive;
+    margin: 30px 0;
+    box-shadow: 0 2px 2px 2px hsla(15, 46%, 13%, 0.74);
+}
