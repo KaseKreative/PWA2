@@ -2,7 +2,9 @@
 <html>
 <head>
     <title></title>
-    <link rel="stylesheet" href="css/stylesheet.css" type="text/css" />
+    <link rel="stylesheet" href="css/stylesheet.css" type="text/css"/>
+    <link rel="stylesheet" href="css/Register.css" type="text/css"/>
+
     <link href='http://fonts.googleapis.com/css?family=Comfortaa' rel='stylesheet' type='text/css'>
 </head>
 <body>
@@ -10,12 +12,90 @@
 <header>
     <div id="Logo"><p class="indent">Crazy Ape</p></div>
     <div class="searchdiv"><input id="search" type="search" placeholder="Search.."></div>
-    <div id="login"><p><a href="#loginModal">Login</a></p></div>
+    <div id="login"><p><a id="Login1" href="#loginModal">Login</a></p></div>
     <nav>
         <div class="nav"><a href="Index.html">Home</a></div>
         <div class="nav"><a href="Dashboard.html">Dashboard</a></div>
         <div class="nav"><a href="Register.html">Register</a></div>
     </nav>
 </header>
+
+<div id="container">
+    <div id="title"><h1>Sign up today!</h1></div>
+    <div>
+        <div>
+            <form>
+                <div id="mainRegister">
+                    <div class="RegisterLabel"><label for="username1">Username:</label></div>
+                    <div class="RegisterInput"><input id="username1" type="text" required></div>
+
+                    <div class="RegisterLabel"><label for="password1">Password:</label></div>
+                    <div class="RegisterInput"><input id="password1" type="password" required></div>
+
+                    <div class="RegisterLabel"><label for="password1Re">Re-Type Password:</label></div>
+                    <div class="RegisterInput"><input id="password1Re" type="password" required></div>
+
+                    <div class="RegisterLabel"><label for="email1" required>Email:</label></div>
+                    <div class="RegisterInput"><input id="email1" type="text"></div>
+                </div>
+                <!-- Main Register Div -->
+
+
+
+
+                <div id="SecondaryRegister">
+                    <div id="SecondaryTitle"><h3>Rate</h3></div>
+                    <div class="RegisterLabel"><label for="xbox1">Xbox:</label></div>
+                        <div class="RegisterInput"><input id="xbox1" type="range" value="1" min="1" max="10"></div>
+                            <div class="value"><p id="RG1">1</p></div>
+
+
+                    <div class="RegisterLabel"><label for="playstation1">Playstation:</label></div>
+                        <div class="RegisterInput"><input id="playstation1" type="range" value="1" min="1" max="10"></div>
+                            <div class="value"><p id="RG2">1</p></div>
+
+
+                    <div class="RegisterLabel"><label for="Wii1">Wii:</label></div>
+                        <div class="RegisterInput"><input id="Wii1" type="range" min="1" value="1" max="10"></div>
+                            <div class="value"><p id="RG3">1</p></div>
+
+
+                    <div class="RegisterLabel"><label for="PC">PC:</label></div>
+                        <div class="RegisterInput">
+                            <input id="PC" type="range" min="1" value="1" max="10">
+                        </div>
+                        <div class="value"><p id="RG4">1</p></div>
+                </div>
+
+                <div id="TermsDiv"><label for="Terms">Agree to the Terms:</label><input id="Terms" type="checkbox"></div>
+                <div id="buttonDiv"><input id="button1" type="submit" value="Submit"></div>
+                <div class="clear"></div>
+
+
+
+            </form>
+        </div>
+    </div>
+</div>
+
+<div id="loginModal">
+    <div>
+        <div>
+            <form>
+                <label for="username">Username:</label>
+                <input type="text" id="username" placeholder="Username" required/>
+                <label for="password">Password:</label>
+                <input type="password" id="password" placeholder="Password" required/>
+                <input type="button" id="loginModalButton" value="Login"/>
+            </form>
+            <div id="LoginX"><a href="Register.html">x</a></div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript" src="js/jquery-1.11.1.js"></script>
+<script type="text/javascript" src="js/jquery-ui-1.10.4.min.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+<script type="text/javascript" src="js/secondary.js"></script>
 </body>
 </html>
