@@ -1,77 +1,70 @@
 /**
  * Created by KaseTebo on 6/6/14.
  */
-var counter = 0;
-var plus = document.getElementById("add");
-var listSelection = document.getElementById("console");
-var append = document.getElementById("append");
-var save = document.querySelector("#save");
-var fullName = document.querySelector("#name");
-var usersName = document.querySelector("#UserTitle");
-var Name = fullName.value;
+    var counter = 0;
+(function($) {
 
-(function(){
-
-$(document).ready(function() {
-
-console.log(Name);
+    var plus = document.getElementById("add");
+    var listSelection = document.getElementById("console");
+    var append = document.getElementById("append");
+    var save = document.querySelector("#save");
+    var fullName = document.querySelector("#name");
+    var name = $(fullName).val();
+    var titleSelector = document.querySelector("#dashTitle");
 
 
 
-
-    $(plus).click(function(){
-        counter += 1;
-        if( counter < 4){
-        $(listSelection).clone()
-            .appendTo(append);
-        }
-    });
-});
-
-
+//    console.log($(fullName).val().length);
 
     //    Form Requirements
-        $(save).click(function(){
-        if ($(Name).value().length > 0) {
-            alert(boo);
-            $("#save").prop("disabled", false);
-            $('#dashTitle').css("display", "block")
-                .animate({opacity: "1"});
-           $("#name").innerHTML = ('<span>'+Name+'</span>');
 
-        } else {
-            $("#save").prop("disabled", true);
+
+    $(document).ready(function(){
+
+        $(save).click(function(){
+            if ($(fullName).val().length >= 0){
+                $(titleSelector).replaceWith("<h1 id='GuestName'>Welcome, " + name+"</h1>")
+                        .css(["visibility"], ["visible"]);
+            }
+
+ })});
+
+    $(plus).click(function () {
+        counter += 1;
+        if (counter < 4) {
+            $(listSelection).clone()
+                .appendTo(append);
         }
     });
 
 
-    $("#login a").click(function() {
+    $("#login a").click(function () {
         $('#loginModal')
             .css("display", "block")
-            .animate({opacity:"1"});
+            .animate({opacity: "1"});
         $('#ModalBackground')
             .css("display", "block")
-            .animate({opacity:"1"});
+            .animate({opacity: "1"});
     });
 
 
-
-    $('#loginModalButton').click(function(){
-       $('#loginModal')
-           .css("display", "none");
-        $('#ModalBackground')
-            .css("display", "none");
-    });
-
-
-
-
-    $("#LoginX").click(function(){
+    $('#loginModalButton').click(function () {
         $('#loginModal')
             .css("display", "none");
         $('#ModalBackground')
             .css("display", "none");
     });
 
-})();
 
+    $("#LoginX").click(function () {
+        $('#loginModal')
+            .css("display", "none");
+        $('#ModalBackground')
+            .css("display", "none");
+    });
+
+
+//    console.log($(fullName).val());
+//    console.log($(fullName).val().length);
+
+})(jQuery);

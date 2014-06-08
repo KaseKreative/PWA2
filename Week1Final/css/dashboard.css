@@ -8,7 +8,7 @@
 #UserImg {
     position: absolute;
     left: 20px;
-    top: 30px;
+    top: 50px;
     /*background: red;*/
     width: 300px;
     height: 300px;
@@ -21,17 +21,27 @@
 }
 
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^General Information~~~*/
-#container h1 {
-    opacity: 0;
-    display:none;
-    position: absolute;
-    top: 9px;
+#dashTitle {
+    opacity: 1;
+    display: none;
+    position: fixed;
     right: 325px;
+    top: 110px;
+    z-index: 99;
     color: #B58F2E;
     margin: 0;
     font-family:'Comfortaa', cursive;
 }
 
+#GuestName{
+    position: fixed;
+    right: 325px;
+    top: 110px;
+    z-index: 99;
+    color: #B58F2E;
+    margin: 0;
+    font-family:'Comfortaa', cursive;
+}
 
 #GeneralInfo {
     /*background: red;*/
@@ -109,7 +119,8 @@ option {
     /*background: blue;*/
     position: absolute;
     right: 80px;
-    top: 90px;
+    top: 120px;
+    border-radius: 5px;
 }
 
 #TextField label {
@@ -130,7 +141,6 @@ textarea {
 #saveDiv {
     /*background: purple;*/
     position: absolute;
-    z-index: 99;
     right: 300px;
     top: 275px;
     width: 200px;

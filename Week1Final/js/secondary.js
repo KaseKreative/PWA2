@@ -4,9 +4,6 @@
 (function () {
 
 
-
-
-
     var topGame1 = document.querySelector("#Top1");
     var topGame2 = document.querySelector("#Top2");
     var topGame3 = document.querySelector("#Top3");
@@ -42,19 +39,4 @@
         $(value3).html(range3.value);
     });
 
-
-    $(topGame1).mousedown(function () {
-        $(topGame1).draggable({ start: function (mouseDown, focus, window, enable) {
-        }})();
-
-        $(topGame2).mousedown(function () {
-            $(topGame2).draggable({ start: function (mouseDown, focus, window, enable) {
-            }})();
-             });
-            $(topGame3).mousedown(function () {
-                $(topGame3).draggable({ start: function (mouseDown, focus, window, enable) {
-                }})();
-            });
-
-    });
 })();
