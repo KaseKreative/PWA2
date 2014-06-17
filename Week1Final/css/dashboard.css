@@ -52,6 +52,18 @@
     border-left: 2px solid #562818;
 }
 
+#cart {
+    position: absolute;
+    background: blue;
+}
+
+#cart a {
+    color: #B58F2E;
+    text-decoration: none;
+    font-family:'Comfortaa', cursive;
+
+}
+
 #GeneralInfo h2 {
     text-align: center;
     color: #B58F2E;
@@ -210,5 +222,5 @@ textarea {
 
 #gameDiv {
     /*background: red;*/
-    height: 500px;
+    height: 200px;
 }

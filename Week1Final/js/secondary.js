@@ -39,4 +39,7 @@
         $(value3).html(range3.value);
     });
 
+    $(".TopGame").draggable({addClasses: true})
+                 .draggable({containment: '#gameDiv'});
+
 })();
