@@ -1,0 +1,57 @@
+
+body {
+    background: radial-gradient(ellipse at center, rgba(84,57,48,1) 5%,rgba(86,40,24,1) 100%) no-repeat center;
+    background-size: cover;
+    height: 670px;
+}
+
+#imgDiv {
+    position: absolute;
+    left: 460px;
+    top: 20px;
+    width: 500px;
+    height: 500px;
+    cursor: pointer;
+
+}
+
+#imgDiv a {
+    text-indent: -9999px;
+    background: url("../img/CrazyApeEntertainment.png") no-repeat center;
+    /*opacity: 0;*/
+    display:block;
+    width: 100%;
+    height: 500px;
+    padding:0;
+}
+
+#imgDiv a:hover {
+
+    background: url("../img/CrazyApeEntertainmentHover.png") no-repeat center;
+}
+
+#coverTitle {
+    /*background: red;*/
+    position: relative;
+    top: 350px;
+    padding: 10px;
+}
+
+#coverTitle h1 {
+    /*background: blue;*/
+    margin: 0 auto;
+    font-size: 250%;
+    text-align: center;
+    width: 35%;
+    font-family:'Comfortaa', cursive;
+    color: #B58F2E;
+}
+
+#coverTitle h1 a {
+    text-decoration: none;
+    color: inherit;
+}
+
+#coverTitle h1 a:hover {
+    color:#e2c16c;
+}

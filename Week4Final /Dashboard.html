@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/html">
+<head>
+    <title></title>
+    <link rel="stylesheet" href="css/stylesheet.css" type="text/css"/>
+    <link rel="stylesheet" href="css/dashboard.css" type="text/css"/>
+    <link href='http://fonts.googleapis.com/css?family=Comfortaa' rel='stylesheet' type='text/css'>
+</head>
+<body>
+<div id="ModalBackground"></div>
+<header>
+    <div id="Logo"><p class="indent">Crazy Ape</p></div>
+    <div class="searchdiv"><input id="search" type="search" placeholder="Search.."></div>
+    <div id="login"><p><a id="Login1" href="#loginModal">Login</a></p></div>
+    <nav>
+        <div class="nav"><a href="Index.html">Home</a></div>
+        <div class="nav"><a href="Dashboard.html">Dashboard</a></div>
+        <div class="nav"><a href="Register.html">Register</a></div>
+    </nav>
+</header>
+<div id="container">
+    <div><h1 id="dashTitle">Welcome, User!</h1></div>
+    <div id="UserImg"><img src="img/Kase2.jpg" alt="User Image"/></div>
+    <div id="GeneralInfo">
+        <div>
+            <h2>General Information</h2>
+        </div>
+        <div id="GeneralForm">
+            <form>
+                <div>
+                    <div class="GeneralLabel">
+                        <label for="name">Full Name:</label>
+                    </div>
+                    <div class="GeneralInput">
+                        <input id="name" type="text" value="Pikachu" required>
+                    </div>
+                    <div class="GeneralLabel">
+                        <label for="age">Age:</label>
+                    </div>
+                    <div class="GeneralInput">
+                        <input id="age" type="number" min="0" max="100">
+                    </div>
+                    <div class="GeneralLabel">
+                        <label for="address">Address:</label>
+                    </div>
+                    <div class="GeneralInput">
+                        <input id="address" type="text">
+                    </div>
+                    <div class="GeneralLabel">
+                        <label for="console">Consoles:</label>
+                    </div>
+                    <div id="consoleDiv" class="GeneralInput">
+                        <select id="console">
+                            <option>Xbox 360</option>
+                            <option>Xbox One</option>
+                            <option>Playstation 3</option>
+                            <option>Playstation 4</option>
+                            <option>Wii</option>
+                            <option>Wii U</option>
+                        </select>
+                        <input id="add" type="button" value="+">
+                    </div>
+                    <div id="append"></div>
+                    <div id="saveDiv">
+                        <input id="save" type="button" href="#" value="Save">
+                    </div>
+                </div>
+                <div id="TextField">
+                        <label for="aboutMe">About Me:</label>
+                        <div><textarea id="aboutMe" placeholder="Tell Us About Yourself!"></textarea>
+                </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="clear"></div>
+
+    <div id="TopGames">
+        <div id="gamesTitle">
+            <h3>Top Games</h3>
+        </div>
+        <div id="gameDiv">
+            <div id="Top1" class="TopGame">Game 1</div>
+            <div id="Top2" class="TopGame">Game 2</div>
+            <div id="Top3" class="TopGame">Game 3</div>
+            <div class="clear"></div>
+        </div>
+    </div>
+</div>
+
+<div id="loginModal">
+    <div>
+        <div>
+            <form>
+                <label for="username">Username:</label>
+                <input type="text" id="username" placeholder="Username" required/>
+                <label for="password">Password:</label>
+                <input type="password" id="password" placeholder="Password" required/>
+                <input type="button" id="loginModalButton" value="Login"/>
+            </form>
+            <div id="LoginX"><a href="Dashboard.html">x</a></div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript" src="js/jquery-1.11.1.js"></script>
+<script type="text/javascript" src="js/jquery-ui-1.10.4.min.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+<script type="text/javascript" src="js/secondary.js"></script>
+</body>
+</html>
