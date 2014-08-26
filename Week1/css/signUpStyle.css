@@ -1,0 +1,50 @@
+#notAMember {
+    /*background: red;*/
+    width: 760px;
+    height:260px;
+    padding: 20px;
+    margin: 0 auto;
+    /*border: 1px solid black;*/
+}
+
+#benefits {
+    height:205px;
+    margin-bottom:10px;
+    border: 1px solid white;
+}
+
+#notAMember .divider {
+ margin-top: 30px;
+}
+
+
+#blueGold {
+    padding: 10px;
+    width: 800px;
+    margin:0 auto;
+    /*background: red;*/
+    height:175px;
+    margin-top:20px;
+}
+
+#blueGold table {
+    text-align: center;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#blueGold table, th, td {
+    height: 40px;
+    border: 1px solid white;
+}
+
+#smallLogo {
+    margin-top: 50px;
+}
+
+#signUpButton {
+    color: white;
+    cursor: pointer;
+    background-color: hsla(301, 25%, 38%, 1); ;
+}
+

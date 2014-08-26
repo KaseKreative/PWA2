@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sign Up - Longboards</title>
+    <link rel="stylesheet" href="css/stylesheet.css" type="text/css"/>
+    <link rel="stylesheet" href="css/signUpStyle.css" type="text/css">
+</head>
+<body>
+
+<header>
+    <p id="logo" class="logo">Logo</p>
+    <ul>
+        <li><a href="Index.html">Home</a></li>
+        <li><a href="signUp.html"><strong>Sign Up</strong></a></li>
+        <li><a href="aboutUs.html">About Us</a></li>
+    </ul>
+    <p class="divider clear">Divider</p>
+</header>
+
+<section id="notAMember">
+    <div id="benefits">
+       <p> Benefits of Membership</p>
+    </div>
+    <p class="divider">Divider</p>
+</section>
+
+<section id="blueGold">
+
+    <table>
+        <tr>
+            <td>Features</td>
+            <td>Blue</td>
+            <td>Gold</td>
+        </tr>
+        <tr>
+            <td>Trending Videos</td>
+            <td>Yes</td>
+            <td>Yes</td>
+        </tr>
+        <tr>
+            <td>Pro Chats</td>
+            <td>No</td>
+            <td>Yes</td>
+        </tr>
+        <tr>
+            <td>Price</td>
+            <td>Free</td>
+            <td>$4.99</td>
+        </tr>
+    </table>
+
+</section>
+
+<div id="signUpButton" class="button"><a href="#logo">Sign Up</a></div>
+
+<div id="smallLogo">
+    <p class="smallLogo">Small Logo</p>
+</div>
+
+
+
+
+<div class="hidden" id="modalBackground"><div class="clear"></div></div>
+
+<div class="hidden" id="signUpModal">
+    <h1>Sign Up!</h1>
+    <div id="toolTips">
+        <p id="tooltip" class="hidden">tooltip</p>
+    </div>
+    <div>
+        <div>
+            <form>
+
+                <label class="modalForm" for="username">Username :</label>
+                <input class="modalForm"  type="text" id="username" placeholder="Username" title="Please enter a username" required/>
+
+
+                <label class="modalForm"for="password">Password :</label>
+                <input class="modalForm"  type="password" id="password" placeholder="Password" title="Please enter a password" required/>
+
+
+                <label class="modalForm">Subscription :</label>
+                <select id="subscription" class="modalForm" title="Please choose a subscription">
+                    <option value="Blue">Blue</option>
+                    <option value="Gold">Gold</option>
+                </select>
+
+
+                <label class="modalForm">Birthday :</label>
+                <input id="birthday" class="modalForm" type="date" title="Please enter your birthday">
+
+                <div id="modalButton"><p>Sign Up</p></div>
+            </form>
+            <!--<div id="LoginX"><a href="Index.html">x</a></div>-->
+            <div class="clear"></div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<script src="js/jquery-1.11.1.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
