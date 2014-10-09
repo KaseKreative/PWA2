@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Form Events - .change( handler )</title>
+<style>
+ div {
+color: red;
+}
+
+</style>
+</head>
+
+<body>
+<!----Istructions-->
+<!-Attach a change event to the select that gets the text for each selected option and writes them in the div. It then triggers the event for the initial text draw. -->
+<select name="sweets" multiple="multiple">
+<option>Chocolate</option>
+<option selected="selected">Candy</option>
+<option>Taffy</option>
+<option>Caramel</option>
+<option>Fudge</option>
+<option>Cookie</option>
+</select>
+<div></div>
+
+<script type="text/javascript" src="jquery-1.11.1.js"></script>
+<script>
+
+$("select option").change(function(){
+    var options = $("option").attr("selected").text();
+
+    console.log(options);
+    $("div").text(options);
+})
+
+</script>
+
+</body>
+</html>

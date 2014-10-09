@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Doc - .ready( handler )</title>
+<style>
+  p {
+color: red;
+}
+</style>
+</head>
+
+<body>
+<!----Istructions-->
+<!--Display a message when the DOM is loaded. -->
+<p>Not loaded yet.</p>
+
+
+<script type="text/javascript" src="jquery-1.11.1.js"></script>
+<script>
+
+    $(document).ready(function($){
+        $("body").find("p").text("Document is Loaded")
+    })(jQuery);
+
+</script>
+
+</body>
+</html>
