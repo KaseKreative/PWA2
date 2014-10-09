@@ -84,3 +84,43 @@ nav ul li a:active{color:hsla(114, 69%, 41%, 0.84);}
     padding-top:5px;
 }
 
+#wrapper > section {
+    padding: 20px;
+}
+
+#wrapper > aside {
+    padding: 20px;
+}
+
+#mainBody {
+    /*background: purple;*/
+}
+
+#mainBody ul {
+    list-style: none;
+    /*background: teal;*/
+    padding:0;
+}
+
+#mainBody ul li {
+    float: left;
+    width: 33%;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.oddLi {
+    color: hsla(114, 69%, 41%, 0.84);
+}
+
+.evenLi {
+    color:hsla(288, 56%, 29%, 1);
+}
+
+.characters {
+    text-align: center;
+}
+
+#mainBody div {
+    width: 100%;
+}

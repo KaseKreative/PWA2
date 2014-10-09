@@ -1,0 +1,104 @@
+
+
+/*
+Colors:
+    Brown: hsla(32, 94%, 33%, 1)
+    Purple: hsla(281, 55%, 31%, 1)
+
+Fonts:
+    font-family: Noteworthy;
+
+Sections:
+    $Header
+    $Thirds
+    $TheMEAT
+
+
+*/
+
+/*$GenClasses*/
+
+.clear {
+    clear: both;
+}
+
+.labels {
+    float: left;
+    width:90px;
+    text-align: right;
+    margin-right: 10px;
+    clear: both;
+}
+
+.tooltip {
+    display:none;
+    position: absolute;
+    border:1px solid #333;
+    background-color: #000;
+    border-radius: 5px;
+    padding:10px;
+    color:#fff;
+    font:12px Arial;
+}
+
+.inputs {
+
+}
+
+/*$Body*/
+body {
+    padding: 0;
+    margin: 0;
+    font-family: Noteworthy;
+
+}
+
+#wrapper {
+    width: 920px;
+    margin: 0 auto;
+    padding: 20px;
+    background: orange;
+}
+
+/*$Header*/
+header {
+    position: relative;
+    z-index: 99;
+    margin: 0;
+    padding: 10px;
+    background: linear-gradient(to bottom, #7c3a00 1%,#a35905 100%);
+    box-shadow: 0 2px 2px 2px black;
+}
+
+header h1 {
+    margin-left: 20px;
+    float: left;
+    display: block;
+    color: #562800;
+    text-shadow: 2px 2px 2px black;
+    /*background: red;*/
+}
+
+header ul {
+
+    margin: 0;
+    margin-right: 90px;
+    margin-top: 30px;
+    float: right;
+}
+
+header ul li {
+    list-style: none;
+    float: left;
+    padding: 0 40px;
+}
+
+header ul li a:link {
+    text-decoration:none;
+    text-shadow: 2px 2px 2px black;
+    color: #562800;
+    font-size: 20px;
+}
+header ul li a:visited {color: #562800;}
+header ul li a:hover {color:hsla(28, 55%, 55%, 1);}
+header ul li a:active {color:hsla(281, 55%, 31%, 1);}

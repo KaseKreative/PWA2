@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sign Up!</title>
+    <link rel="stylesheet" href="css/main.css" type="text/css"/>
+</head>
+<body>
+
+<header>
+    <h1 class="logo">Longboards 4 Lyfe</h1>
+    <ul>
+        <li><a href="Index.html"><strong>Home</strong></a></li>
+        <li><a href="signUp.html">Sign Up</a></li>
+        <li><a href="Dashboard.html">Dashboard</a></li>
+    </ul>
+    <div class="clear"></div>
+</header>
+
+<div id="wrapper">
+<h2>Sign up Here!</h2>
+    <div id="formDiv">
+        <form>
+            <div>
+                <label for="username">Username:</label>
+                <input type="text" id="username" title="Please Enter A Username!" placeholder="Username" class="MasterTooltip"/>
+            </div>
+            <div>
+                <label for="password">Password:</label>
+                <input type="password" id="password" title="Please Enter A Password!" placeholder="Password" class="MasterTooltip"/>
+            </div>
+            <div>
+            <label for="fName">First Name:</label>
+            <input type="text" id="fName" title="Please Enter Your First Name!" placeholder="First Name" class="MasterTooltip"/>
+        </div>
+            <div>
+                <label for="lName">Last Name:</label>
+                <input type="text" id="lName" title="Please Enter Your Last Name!" placeholder="Last Name" class="MasterTooltip"/>
+            </div>
+            <div>
+                <label for="board">Board Type:</label>
+                <select id="board" title="Please Select Your Favorite Board!" class="MasterTooltip">
+                    <option value="Dropthrough">Dropthrough</option>
+                    <option value="Pintail">Pintail</option>
+                    <option value="Cruiser">Cruiser</option>
+                </select>
+            </div>
+        </form>
+    </div>
+
+</div>
+<script src="js/jquery-1.11.1.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

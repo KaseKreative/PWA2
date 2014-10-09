@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Misc. Traversing.each( function )</title>
+<style>
+  ul {
+font-size: 18px;
+margin: 0;
+}
+span {
+color: blue;
+text-decoration: underline;
+cursor: pointer;
+}
+.example {
+font-style: italic;
+}
+
+</style>
+</head>
+
+<body>
+<!----Istructions-->
+<!--Each time you click on the link, change the font to italic using the example class.-->
+
+
+To do list: <span>(click here to change)</span>
+<ul>
+<li>Eat</li>
+<li>Sleep</li>
+<li>Be merry</li>
+</ul>
+
+<script type="text/javascript" src="jquery-1.11.1.js"></script>
+<script>
+
+    $("span").on("click", function(){
+        $("li").toggleClass("example");
+    })
+
+</script>
+</body>
+</html>

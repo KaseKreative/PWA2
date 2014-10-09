@@ -1,0 +1,23 @@
+#thirds {
+    width: 900px;
+    margin: 0 auto;
+    /*background: red;*/
+}
+
+#thirds ul {
+    padding:0;
+    width:100%;
+    /*background: purple;*/
+    margin: 0;
+    text-align: center;
+}
+
+#thirds ul li {
+    width: 33.33%;
+    float: left;
+    list-style: none;
+
+}
+
+#thirds ul li:nth-child(2) {
+}

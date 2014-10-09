@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Traversing - .eq( index )</title>
+<style>
+ div {
+width: 60px;
+height: 60px;
+margin: 10px;
+float: left;
+border: 2px solid blue;
+}
+.blue {
+background: blue;
+}
+
+</style>
+</head>
+
+<body>
+<!----Istructions-->
+<!--Turn the div with index 2 blue by adding an appropriate class. -->
+
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<script type="text/javascript" src="jquery-1.11.1.js"></script>
+<script>
+
+    $("div").eq( 2 ).addClass("blue");
+
+</script>
+
+</body>
+</html>
