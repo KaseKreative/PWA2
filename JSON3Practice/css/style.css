@@ -1,0 +1,30 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+html{}
+
+body{
+	background-color: #CCC;
+}
+
+
+#container {
+	width: 960px;
+	margin: 0 auto;
+	background-color:#FFF;
+}
+
+
+header {
+
+}
+
+
+nav {
+
+}
+
+section {
+	
+}
