@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <link rel="stylesheet" href="css/modal.css" type="text/css" />
+</head>
+<body>
+<p><a href="admin.html">Admin Dashboard</a></p>
+<p><a href="#" id="addBtn">Add +</a></p>
+
+
+
+<div class="projects">
+
+
+</div>
+
+
+
+
+
+
+<div id="Modal">
+    <p ><a href="#" id="exit">x</a></p>
+
+    <form>
+        <div>
+            <label for="boardName">Board Name:</label>
+            <input type="text" name="projectName" id="boardName" placeholder="None">
+        </div>
+        <div>
+            <label for="boardType">Board Type:</label>
+            <input type="text" name="projectDescription" id="boardType" placeholder="None">
+        </div>
+        <div>
+            <label for="purchaseDate">Purchase Date:</label>
+            <input type="text" name="dueDate" id="purchaseDate" placeholder="None">
+        </div>
+        <div>
+            <label for="Parts">Parts</label>
+            <input type="radio" name="status" id="Parts">
+        </div>
+        <div>
+            <label for="Favorites">Favorites</label>
+            <input type="radio" name="status" id="Favorites">
+        </div>
+        <div>
+            <label for="Sale">For Sale</label>
+            <input type="radio" name="status" id="Sale">
+        </div>
+        <div>
+            <label for="other">Other</label>
+            <input type="radio" name="status" id="Other">
+        </div>
+        <div>
+            <input type="button" id="add" value="Add">
+        </div>
+    </form>
+
+
+</div>
+
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/jquery-ui-1.11.2.custom/jquery-ui.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

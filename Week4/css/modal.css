@@ -1,0 +1,26 @@
+#Modal {
+    background: purple;
+    padding: 10px;
+    width:400px;
+    height: 300px;
+    display: none;
+    margin: 0 auto;
+    border-radius: 5px;
+    position: relative;
+}
+
+#exit {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    text-decoration: none;
+    color: white;
+}
+
+.display {
+    display: block;
+}
+
+form div {
+    margin-top:10px;
+}
